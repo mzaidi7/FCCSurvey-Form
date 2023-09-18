@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Solway:wght@300&display=swap" rel="stylesheet">
+    </title>
+  </head>
+
+<!-- BORDER SAPERATION -->
+
+  <body>
+    <main>
+      <header action="" method="post" class='survey'>
+                <h1 id="title">Hiking Survey Form</h1>
+                <p id="description">Hello There!<br>This survey gathers anonymous data from hikers to help others plan for long hike attempts, and to gather stats about Who is hiking.
+Skip questions you don't want to answer.</p>
+<form id="survey-form">
+  <fieldset>
+
+  <label for="name" id="name-label">Name: 
+  <input id="name" placeholder="Please enter your name" type="text"required/>
+  </label>
+
+  <label for="email" id="email-label">Email: 
+  <input id="email" placeholder="Please enter your email" type="email"required/>
+  </label>
+
+  <label for="number" id="number-label">Age: 
+  <input id="number"  min="8" max="120" placeholder="Age" type="number" required/>
+  </label>
+
+  </fieldset>
+
+<fieldset>
+  <label for="dropdown">
+  <p class="subtitle">What kind of hiking trips you usually go to ?</p>
+    <select id="dropdown" name="dropdown">
+      <option value="0">I usually went for...</option>
+      <option value="1">Day hikes</option>
+      <option value="2">Overnight hikes</option>
+      <option value="3">Trail running</option>
+      <option value="4">Prefer Not To Say</option>
+      <option value="5">Other</option>
+    </select>
+  </label>
+</fieldset>
+
+<fieldset>
+  <label for="male">
+    <p class="subtitle">What is your gender?</p>
+    <input id="male" type="radio" name="gender" class="inline" value="1"/> Male 
+  </label>
+  <label for="female"><input id="female" type="radio" name="gender" class="inline" value="2"/> Female to say</label>
+    <label for="no"><input id="no" type="radio" name="gender" class="inline" value="3"/> Prefer not to say</label>
+</fieldset>
+
+<fieldset>
+<label for="reason" name="reason">
+<p class="subtitle">What is your reason to go for a hike?<span class="clue"> (check all that apply)</span></p>
+<input id="reason" type="checkbox" name="reason" class="inline" value="1"/> To stay fit </label>
+<label for="view" name="view"><input id="view" type="checkbox" name="view" class="inline" value="2"/> For the view </label>
+<label for="experience" name="experience"><input id="experience" type="checkbox" name="experience" class="inline" value="3"/> For the experience </label>
+
+
+<fieldset>
+  <label for="comments">What advice would you offer to individuals who wish to begin hiking but are feeling apprehensive, with the aim of boosting their confidence and motivation?
+  <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Enter your comment here..."></textarea> </label>
+</fieldset>
+<fieldset>
+<input id="submit" type="submit" value="Submit"/><hr><p id="description" class="subtitle_last"> Thank you for your cooperation!</p></fieldset>
+
+        </form>
+      </header>
+    </main>
+  </body>
+</html>
+
