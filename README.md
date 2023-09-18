@@ -1,4 +1,4 @@
-Build a Survey Form
+<h1>Build a Survey Form</h1>
 Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks
 
 User Stories:
